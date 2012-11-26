@@ -1,0 +1,9 @@
+@GenModel(suppressInterfaces="true", containmentProxies="true")
+package org.eclipselabs.emf.ext
+
+import org.eclipse.emf.ecore.EObject
+
+class ECollection
+{
+	refers EObject[] values
+}
