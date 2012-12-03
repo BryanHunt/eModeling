@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/org.eclipselabs.emf.ext.junit.feature_1.0.0.qualifier.jar" id="org.eclipselabs.emf.ext.junit.feature" version="1.0.0.qualifier">
+      <category name="emf_ext"/>
+   </feature>
+   <feature url="features/org.eclipselabs.emf.ext.runtime.feature_1.0.0.qualifier.jar" id="org.eclipselabs.emf.ext.runtime.feature" version="1.0.0.qualifier">
+      <category name="emf_ext"/>
+   </feature>
+   <feature url="features/org.eclipselabs.emf.ext.sdk.feature_1.0.0.qualifier.jar" id="org.eclipselabs.emf.ext.sdk.feature" version="1.0.0.qualifier">
+      <category name="emf_ext"/>
+   </feature>
+   <category-def name="emf_ext" label="EMF Extensions"/>
+</site>
