@@ -5,4 +5,5 @@
    <service>
       <provide interface="org.eclipselabs.emf.ext.ResourceSetConfigurator"/>
    </service>
+   <reference bind="bindUriMapProvider" cardinality="0..n" interface="org.eclipselabs.emf.ext.UriMapProvider" name="UriMapProvider" policy="dynamic" unbind="unbindUriMapProvider"/>
 </scr:component>

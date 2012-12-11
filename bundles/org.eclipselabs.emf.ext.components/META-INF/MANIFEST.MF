@@ -12,4 +12,5 @@ Import-Package: org.eclipse.emf.common.notify,
  org.eclipse.emf.ecore.resource.impl,
  org.eclipse.emf.ecore.util,
  org.eclipselabs.emf.ext
-Service-Component: OSGI-INF/factory.xml, OSGI-INF/uri_handler.xml
+Service-Component: OSGI-INF/services/factory.xml, OSGI-INF/services/uri_handler.xml,
+ OSGI-INF/services/uri_mapping.xml

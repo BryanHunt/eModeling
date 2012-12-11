@@ -12,13 +12,18 @@
 package org.eclipselabs.emf.ext.components;
 
 import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 import org.eclipse.emf.common.util.EList;
+import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.resource.ResourceSet;
+import org.eclipse.emf.ecore.resource.URIConverter;
 import org.eclipse.emf.ecore.resource.URIHandler;
 import org.eclipselabs.emf.ext.ResourceSetConfigurator;
 import org.eclipselabs.emf.ext.UriHandlerProvider;
+import org.eclipselabs.emf.ext.UriMapProvider;
 
 /**
  * This implementation of the ResourceSetConfigurator service will attach
@@ -30,16 +35,26 @@ import org.eclipselabs.emf.ext.UriHandlerProvider;
  */
 public class ResourceSetUriHandlerConfigurator implements ResourceSetConfigurator
 {
+	private Set<UriHandlerProvider> handlerProviders = new HashSet<UriHandlerProvider>();
+	private Set<UriMapProvider> mapProviders = new HashSet<UriMapProvider>();
+	private ReentrantReadWriteLock lock = new ReentrantReadWriteLock();
+
 	@Override
 	public void configureResourceSet(ResourceSet resourceSet)
 	{
-		EList<URIHandler> uriHandlers = resourceSet.getURIConverter().getURIHandlers();
+		URIConverter uriConverter = resourceSet.getURIConverter();
+		EList<URIHandler> uriHandlers = uriConverter.getURIHandlers();
+		Map<URI, URI> uriMap = uriConverter.getURIMap();
+
 		lock.readLock().lock();
 
 		try
 		{
-			for (UriHandlerProvider provider : providers)
-				uriHandlers.add(0, provider.getURIHandler());
+			for (UriHandlerProvider handlerProvider : handlerProviders)
+				uriHandlers.add(0, handlerProvider.getURIHandler());
+
+			for (UriMapProvider mapProvider : mapProviders)
+				uriMap.putAll(mapProvider.getUriMap());
 		}
 		finally
 		{
@@ -53,7 +68,7 @@ public class ResourceSetUriHandlerConfigurator implements ResourceSetConfigurato
 
 		try
 		{
-			providers.add(handlerProvider);
+			handlerProviders.add(handlerProvider);
 		}
 		finally
 		{
@@ -67,7 +82,7 @@ public class ResourceSetUriHandlerConfigurator implements ResourceSetConfigurato
 
 		try
 		{
-			providers.remove(handlerProvider);
+			handlerProviders.remove(handlerProvider);
 		}
 		finally
 		{
@@ -75,6 +90,31 @@ public class ResourceSetUriHandlerConfigurator implements ResourceSetConfigurato
 		}
 	}
 
-	private HashSet<UriHandlerProvider> providers = new HashSet<UriHandlerProvider>();
-	private ReentrantReadWriteLock lock = new ReentrantReadWriteLock();
+	public void bindUriMapProvider(UriMapProvider mapProvider)
+	{
+		lock.writeLock().lock();
+
+		try
+		{
+			mapProviders.add(mapProvider);
+		}
+		finally
+		{
+			lock.writeLock().unlock();
+		}
+	}
+
+	public void unbindUriMapProvider(UriMapProvider mapProvider)
+	{
+		lock.writeLock().lock();
+
+		try
+		{
+			mapProviders.remove(mapProvider);
+		}
+		finally
+		{
+			lock.writeLock().unlock();
+		}
+	}
 }

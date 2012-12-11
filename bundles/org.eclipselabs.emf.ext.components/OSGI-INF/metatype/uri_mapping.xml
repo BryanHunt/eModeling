@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaData xmlns="http://www.osgi.org/xmlns/metatype/v1.1.0">
+	<OCD name="EMF URI Mapping" id="org.eclipselabs.emf.ext.components.uriMapping" description="EMF URI mapping">
+		<AD name="Source"      id="src"  type="String" description="The source URI."/>
+		<AD name="Destination" id="dest" type="String" description="The destination URI."/>
+	</OCD>
+	<Designate factoryPid="org.eclipselabs.emf.ext.components.uriMapping">
+		<Object ocdref="org.eclipselabs.emf.ext.components.uriMapping"/>
+	</Designate>
+</MetaData>
