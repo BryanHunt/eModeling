@@ -14,3 +14,4 @@ Import-Package: org.eclipse.emf.common.notify,
  org.eclipselabs.emf.ext
 Service-Component: OSGI-INF/services/factory.xml, OSGI-INF/services/uri_handler.xml,
  OSGI-INF/services/uri_mapping.xml
+Bundle-ActivationPolicy: lazy
