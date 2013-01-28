@@ -22,7 +22,7 @@ import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Table;
 import org.eclipse.swt.widgets.TableColumn;
 import org.eclipse.ui.part.ViewPart;
-import org.eclipselabs.emf.ext.ECollection;
+import org.eclipselabs.emf.ext.EContainmentCollection;
 import org.eclipselabs.emf.ext.ExtPackage;
 import org.eclipselabs.emf.log.LogPackage;
 
@@ -33,7 +33,7 @@ import org.eclipselabs.emf.log.LogPackage;
 public class LogView extends ViewPart
 {
 	private TableViewer viewer;
-	private static IEMFListProperty collectionListProperty = EMFProperties.list(ExtPackage.Literals.ECOLLECTION__VALUES);
+	private static IEMFListProperty collectionListProperty = EMFProperties.list(ExtPackage.Literals.ECONTAINMENT_COLLECTION__VALUES);
 	private static IEMFValueProperty[] logLabelProperties = EMFProperties.values(LogPackage.Literals.LOG_ENTRY__CREATED_ON, LogPackage.Literals.LOG_ENTRY__LEVEL, LogPackage.Literals.LOG_ENTRY__MESSAGE,
 			LogPackage.Literals.LOG_ENTRY__EXCEPTION_MESSAGE);
 
@@ -70,7 +70,7 @@ public class LogView extends ViewPart
 		viewer.getTable().setFocus();
 	}
 
-	public void refresh(ECollection entries)
+	public void refresh(EContainmentCollection entries)
 	{
 		ViewerSupport.bind(viewer, collectionListProperty.observe(entries), logLabelProperties);
 	}
