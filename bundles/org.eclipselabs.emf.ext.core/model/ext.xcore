@@ -5,5 +5,5 @@ import org.eclipse.emf.ecore.EObject
 
 class ECollection
 {
-	refers EObject[] values
+	contains EObject[] values
 }
