@@ -1,0 +1,8 @@
+@GenModel(suppressInterfaces="true")
+package org.eclipselabs.emodeling.example.model
+
+class Person
+{
+	String firstName
+	String lastName
+}

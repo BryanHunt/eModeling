@@ -1,0 +1,21 @@
+@GenModel(suppressInterfaces="true", containmentProxies="true")
+package org.eclipselabs.emodeling
+
+import org.eclipse.emf.ecore.EObject
+
+type EList wraps org.eclipse.emf.common.util.EList<EObject>
+
+interface ECollection
+{
+	op EList getValues()
+}
+
+class EContainmentCollection extends ECollection
+{
+	contains EObject[] values
+}
+
+class EReferenceCollection extends ECollection
+{
+	refers EObject[] values
+}

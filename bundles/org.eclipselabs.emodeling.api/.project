@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>org.eclipselabs.emodeling.components</name>
+	<name>org.eclipselabs.emodeling.api</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -21,13 +21,14 @@
 			</arguments>
 		</buildCommand>
 		<buildCommand>
-			<name>org.eclipse.pde.ds.core.builder</name>
+			<name>org.eclipse.xtext.ui.shared.xtextBuilder</name>
 			<arguments>
 			</arguments>
 		</buildCommand>
 	</buildSpec>
 	<natures>
-		<nature>org.eclipse.pde.PluginNature</nature>
 		<nature>org.eclipse.jdt.core.javanature</nature>
+		<nature>org.eclipse.pde.PluginNature</nature>
+		<nature>org.eclipse.xtext.ui.shared.xtextNature</nature>
 	</natures>
 </projectDescription>

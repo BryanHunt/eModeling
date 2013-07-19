@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" activate="configure" configuration-policy="require" name="org.eclipselabs.emf.ext.components.uriMapping">
-   <implementation class="org.eclipselabs.emf.ext.components.UriMapping"/>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" activate="configure" configuration-policy="require" name="org.eclipselabs.emodeling.components.uriMapping">
+   <implementation class="org.eclipselabs.emodeling.components.UriMapProviderComponent"/>
    <service>
-      <provide interface="org.eclipselabs.emf.ext.UriMapProvider"/>
+      <provide interface="org.eclipselabs.emodeling.UriMapProvider"/>
    </service>
 </scr:component>
