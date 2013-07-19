@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: EMF Modeling Extensions Loging UI
 Bundle-SymbolicName: org.eclipselabs.emodeling.log.ui
-Bundle-Version: 0.7.1.qualifier
+Bundle-Version: 1.0.0.qualifier
 Bundle-Vendor: EclipseLabs
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Import-Package: org.eclipse.core.commands.common,
