@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/org.eclipselabs.emf.ext.junit.feature_1.0.0.qualifier.jar" id="org.eclipselabs.emf.ext.junit.feature" version="1.0.0.qualifier">
-      <category name="emf_ext"/>
+   <feature url="features/org.eclipselabs.emodeling.junit.feature_1.0.0.qualifier.jar" id="org.eclipselabs.emodeling.junit.feature" version="1.0.0.qualifier">
+      <category name="emodeling"/>
    </feature>
-   <feature url="features/org.eclipselabs.emf.ext.runtime.feature_1.0.0.qualifier.jar" id="org.eclipselabs.emf.ext.runtime.feature" version="1.0.0.qualifier">
-      <category name="emf_ext"/>
+   <feature url="features/org.eclipselabs.emodeling.runtime.feature_1.0.0.qualifier.jar" id="org.eclipselabs.emodeling.runtime.feature" version="1.0.0.qualifier">
+      <category name="emodeling"/>
    </feature>
-   <feature url="features/org.eclipselabs.emf.ext.sdk.feature_1.0.0.qualifier.jar" id="org.eclipselabs.emf.ext.sdk.feature" version="1.0.0.qualifier">
-      <category name="emf_ext"/>
+   <feature url="features/org.eclipselabs.emodeling.sdk.feature_1.0.0.qualifier.jar" id="org.eclipselabs.emodeling.sdk.feature" version="1.0.0.qualifier">
+      <category name="emodeling"/>
    </feature>
-   <category-def name="emf_ext" label="EMF Extensions"/>
+   <category-def name="emodeling" label="EMF Modeling Extensions"/>
 </site>
