@@ -1,4 +1,4 @@
-emf-ext
+eModeling
 =======
 
 Extensions for EMF
