@@ -4,13 +4,13 @@
  *
  * $Id$
  */
-package org.eclipselabs.emf.query.impl;
+package org.eclipselabs.emodeling.query.impl;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipselabs.emf.query.Literal;
-import org.eclipselabs.emf.query.QueryPackage;
+import org.eclipselabs.emodeling.query.Literal;
+import org.eclipselabs.emodeling.query.QueryPackage;
 
 /**
  * <!-- begin-user-doc -->
@@ -19,8 +19,8 @@ import org.eclipselabs.emf.query.QueryPackage;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link org.eclipselabs.emf.query.impl.LiteralImpl#getLiteralValue <em>Literal Value</em>}</li>
- *   <li>{@link org.eclipselabs.emf.query.impl.LiteralImpl#getValue <em>Value</em>}</li>
+ *   <li>{@link org.eclipselabs.emodeling.query.impl.LiteralImpl#getLiteralValue <em>Literal Value</em>}</li>
+ *   <li>{@link org.eclipselabs.emodeling.query.impl.LiteralImpl#getValue <em>Value</em>}</li>
  * </ul>
  * </p>
  *

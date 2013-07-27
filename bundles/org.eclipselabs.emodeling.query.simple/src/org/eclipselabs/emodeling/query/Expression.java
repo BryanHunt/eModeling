@@ -4,7 +4,7 @@
  *
  * $Id$
  */
-package org.eclipselabs.emf.query;
+package org.eclipselabs.emodeling.query;
 
 import org.eclipse.emf.ecore.EObject;
 
@@ -14,7 +14,7 @@ import org.eclipse.emf.ecore.EObject;
  * <!-- end-user-doc -->
  *
  *
- * @see org.eclipselabs.emf.query.QueryPackage#getExpression()
+ * @see org.eclipselabs.emodeling.query.QueryPackage#getExpression()
  * @model abstract="true"
  * @generated
  */

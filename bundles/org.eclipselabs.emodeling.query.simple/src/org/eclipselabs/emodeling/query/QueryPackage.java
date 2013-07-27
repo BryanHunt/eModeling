@@ -4,7 +4,7 @@
  *
  * $Id$
  */
-package org.eclipselabs.emf.query;
+package org.eclipselabs.emodeling.query;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
@@ -22,7 +22,7 @@ import org.eclipse.emf.ecore.EReference;
  *   <li>and each data type</li>
  * </ul>
  * <!-- end-user-doc -->
- * @see org.eclipselabs.emf.query.QueryFactory
+ * @see org.eclipselabs.emodeling.query.QueryFactory
  * @model kind="package"
  * @generated
  */
@@ -58,14 +58,14 @@ public interface QueryPackage extends EPackage
    * <!-- end-user-doc -->
 	 * @generated
 	 */
-  QueryPackage eINSTANCE = org.eclipselabs.emf.query.impl.QueryPackageImpl.init();
+  QueryPackage eINSTANCE = org.eclipselabs.emodeling.query.impl.QueryPackageImpl.init();
 
   /**
-	 * The meta object id for the '{@link org.eclipselabs.emf.query.impl.ExpressionImpl <em>Expression</em>}' class.
+	 * The meta object id for the '{@link org.eclipselabs.emodeling.query.impl.ExpressionImpl <em>Expression</em>}' class.
 	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see org.eclipselabs.emf.query.impl.ExpressionImpl
-	 * @see org.eclipselabs.emf.query.impl.QueryPackageImpl#getExpression()
+	 * @see org.eclipselabs.emodeling.query.impl.ExpressionImpl
+	 * @see org.eclipselabs.emodeling.query.impl.QueryPackageImpl#getExpression()
 	 * @generated
 	 */
   int EXPRESSION = 0;
@@ -80,11 +80,11 @@ public interface QueryPackage extends EPackage
   int EXPRESSION_FEATURE_COUNT = 0;
 
   /**
-	 * The meta object id for the '{@link org.eclipselabs.emf.query.impl.FeatureAccessorImpl <em>Feature Accessor</em>}' class.
+	 * The meta object id for the '{@link org.eclipselabs.emodeling.query.impl.FeatureAccessorImpl <em>Feature Accessor</em>}' class.
 	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see org.eclipselabs.emf.query.impl.FeatureAccessorImpl
-	 * @see org.eclipselabs.emf.query.impl.QueryPackageImpl#getFeatureAccessor()
+	 * @see org.eclipselabs.emodeling.query.impl.FeatureAccessorImpl
+	 * @see org.eclipselabs.emodeling.query.impl.QueryPackageImpl#getFeatureAccessor()
 	 * @generated
 	 */
   int FEATURE_ACCESSOR = 1;
@@ -126,11 +126,11 @@ public interface QueryPackage extends EPackage
   int FEATURE_ACCESSOR_FEATURE_COUNT = EXPRESSION_FEATURE_COUNT + 3;
 
   /**
-	 * The meta object id for the '{@link org.eclipselabs.emf.query.impl.LiteralImpl <em>Literal</em>}' class.
+	 * The meta object id for the '{@link org.eclipselabs.emodeling.query.impl.LiteralImpl <em>Literal</em>}' class.
 	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see org.eclipselabs.emf.query.impl.LiteralImpl
-	 * @see org.eclipselabs.emf.query.impl.QueryPackageImpl#getLiteral()
+	 * @see org.eclipselabs.emodeling.query.impl.LiteralImpl
+	 * @see org.eclipselabs.emodeling.query.impl.QueryPackageImpl#getLiteral()
 	 * @generated
 	 */
   int LITERAL = 2;
@@ -163,11 +163,11 @@ public interface QueryPackage extends EPackage
   int LITERAL_FEATURE_COUNT = EXPRESSION_FEATURE_COUNT + 2;
 
   /**
-	 * The meta object id for the '{@link org.eclipselabs.emf.query.impl.BinaryOperationImpl <em>Binary Operation</em>}' class.
+	 * The meta object id for the '{@link org.eclipselabs.emodeling.query.impl.BinaryOperationImpl <em>Binary Operation</em>}' class.
 	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-	 * @see org.eclipselabs.emf.query.impl.BinaryOperationImpl
-	 * @see org.eclipselabs.emf.query.impl.QueryPackageImpl#getBinaryOperation()
+	 * @see org.eclipselabs.emodeling.query.impl.BinaryOperationImpl
+	 * @see org.eclipselabs.emodeling.query.impl.QueryPackageImpl#getBinaryOperation()
 	 * @generated
 	 */
   int BINARY_OPERATION = 3;
@@ -210,128 +210,128 @@ public interface QueryPackage extends EPackage
 
 
   /**
-	 * Returns the meta object for class '{@link org.eclipselabs.emf.query.Expression <em>Expression</em>}'.
+	 * Returns the meta object for class '{@link org.eclipselabs.emodeling.query.Expression <em>Expression</em>}'.
 	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Expression</em>'.
-	 * @see org.eclipselabs.emf.query.Expression
+	 * @see org.eclipselabs.emodeling.query.Expression
 	 * @generated
 	 */
   EClass getExpression();
 
   /**
-	 * Returns the meta object for class '{@link org.eclipselabs.emf.query.FeatureAccessor <em>Feature Accessor</em>}'.
+	 * Returns the meta object for class '{@link org.eclipselabs.emodeling.query.FeatureAccessor <em>Feature Accessor</em>}'.
 	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Feature Accessor</em>'.
-	 * @see org.eclipselabs.emf.query.FeatureAccessor
+	 * @see org.eclipselabs.emodeling.query.FeatureAccessor
 	 * @generated
 	 */
   EClass getFeatureAccessor();
 
   /**
-	 * Returns the meta object for the containment reference '{@link org.eclipselabs.emf.query.FeatureAccessor#getFeatureAccessor <em>Feature Accessor</em>}'.
+	 * Returns the meta object for the containment reference '{@link org.eclipselabs.emodeling.query.FeatureAccessor#getFeatureAccessor <em>Feature Accessor</em>}'.
 	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference '<em>Feature Accessor</em>'.
-	 * @see org.eclipselabs.emf.query.FeatureAccessor#getFeatureAccessor()
+	 * @see org.eclipselabs.emodeling.query.FeatureAccessor#getFeatureAccessor()
 	 * @see #getFeatureAccessor()
 	 * @generated
 	 */
   EReference getFeatureAccessor_FeatureAccessor();
 
   /**
-	 * Returns the meta object for the attribute '{@link org.eclipselabs.emf.query.FeatureAccessor#getFeatureName <em>Feature Name</em>}'.
+	 * Returns the meta object for the attribute '{@link org.eclipselabs.emodeling.query.FeatureAccessor#getFeatureName <em>Feature Name</em>}'.
 	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Feature Name</em>'.
-	 * @see org.eclipselabs.emf.query.FeatureAccessor#getFeatureName()
+	 * @see org.eclipselabs.emodeling.query.FeatureAccessor#getFeatureName()
 	 * @see #getFeatureAccessor()
 	 * @generated
 	 */
   EAttribute getFeatureAccessor_FeatureName();
 
   /**
-	 * Returns the meta object for the reference '{@link org.eclipselabs.emf.query.FeatureAccessor#getFeature <em>Feature</em>}'.
+	 * Returns the meta object for the reference '{@link org.eclipselabs.emodeling.query.FeatureAccessor#getFeature <em>Feature</em>}'.
 	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Feature</em>'.
-	 * @see org.eclipselabs.emf.query.FeatureAccessor#getFeature()
+	 * @see org.eclipselabs.emodeling.query.FeatureAccessor#getFeature()
 	 * @see #getFeatureAccessor()
 	 * @generated
 	 */
   EReference getFeatureAccessor_Feature();
 
   /**
-	 * Returns the meta object for class '{@link org.eclipselabs.emf.query.Literal <em>Literal</em>}'.
+	 * Returns the meta object for class '{@link org.eclipselabs.emodeling.query.Literal <em>Literal</em>}'.
 	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Literal</em>'.
-	 * @see org.eclipselabs.emf.query.Literal
+	 * @see org.eclipselabs.emodeling.query.Literal
 	 * @generated
 	 */
   EClass getLiteral();
 
   /**
-	 * Returns the meta object for the attribute '{@link org.eclipselabs.emf.query.Literal#getLiteralValue <em>Literal Value</em>}'.
+	 * Returns the meta object for the attribute '{@link org.eclipselabs.emodeling.query.Literal#getLiteralValue <em>Literal Value</em>}'.
 	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Literal Value</em>'.
-	 * @see org.eclipselabs.emf.query.Literal#getLiteralValue()
+	 * @see org.eclipselabs.emodeling.query.Literal#getLiteralValue()
 	 * @see #getLiteral()
 	 * @generated
 	 */
   EAttribute getLiteral_LiteralValue();
 
   /**
-	 * Returns the meta object for the attribute '{@link org.eclipselabs.emf.query.Literal#getValue <em>Value</em>}'.
+	 * Returns the meta object for the attribute '{@link org.eclipselabs.emodeling.query.Literal#getValue <em>Value</em>}'.
 	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Value</em>'.
-	 * @see org.eclipselabs.emf.query.Literal#getValue()
+	 * @see org.eclipselabs.emodeling.query.Literal#getValue()
 	 * @see #getLiteral()
 	 * @generated
 	 */
   EAttribute getLiteral_Value();
 
   /**
-	 * Returns the meta object for class '{@link org.eclipselabs.emf.query.BinaryOperation <em>Binary Operation</em>}'.
+	 * Returns the meta object for class '{@link org.eclipselabs.emodeling.query.BinaryOperation <em>Binary Operation</em>}'.
 	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Binary Operation</em>'.
-	 * @see org.eclipselabs.emf.query.BinaryOperation
+	 * @see org.eclipselabs.emodeling.query.BinaryOperation
 	 * @generated
 	 */
   EClass getBinaryOperation();
 
   /**
-	 * Returns the meta object for the reference '{@link org.eclipselabs.emf.query.BinaryOperation#getLeftOperand <em>Left Operand</em>}'.
+	 * Returns the meta object for the reference '{@link org.eclipselabs.emodeling.query.BinaryOperation#getLeftOperand <em>Left Operand</em>}'.
 	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Left Operand</em>'.
-	 * @see org.eclipselabs.emf.query.BinaryOperation#getLeftOperand()
+	 * @see org.eclipselabs.emodeling.query.BinaryOperation#getLeftOperand()
 	 * @see #getBinaryOperation()
 	 * @generated
 	 */
   EReference getBinaryOperation_LeftOperand();
 
   /**
-	 * Returns the meta object for the attribute '{@link org.eclipselabs.emf.query.BinaryOperation#getOperator <em>Operator</em>}'.
+	 * Returns the meta object for the attribute '{@link org.eclipselabs.emodeling.query.BinaryOperation#getOperator <em>Operator</em>}'.
 	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Operator</em>'.
-	 * @see org.eclipselabs.emf.query.BinaryOperation#getOperator()
+	 * @see org.eclipselabs.emodeling.query.BinaryOperation#getOperator()
 	 * @see #getBinaryOperation()
 	 * @generated
 	 */
   EAttribute getBinaryOperation_Operator();
 
   /**
-	 * Returns the meta object for the reference '{@link org.eclipselabs.emf.query.BinaryOperation#getRightOperand <em>Right Operand</em>}'.
+	 * Returns the meta object for the reference '{@link org.eclipselabs.emodeling.query.BinaryOperation#getRightOperand <em>Right Operand</em>}'.
 	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
 	 * @return the meta object for the reference '<em>Right Operand</em>'.
-	 * @see org.eclipselabs.emf.query.BinaryOperation#getRightOperand()
+	 * @see org.eclipselabs.emodeling.query.BinaryOperation#getRightOperand()
 	 * @see #getBinaryOperation()
 	 * @generated
 	 */
@@ -361,21 +361,21 @@ public interface QueryPackage extends EPackage
   interface Literals
   {
     /**
-		 * The meta object literal for the '{@link org.eclipselabs.emf.query.impl.ExpressionImpl <em>Expression</em>}' class.
+		 * The meta object literal for the '{@link org.eclipselabs.emodeling.query.impl.ExpressionImpl <em>Expression</em>}' class.
 		 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-		 * @see org.eclipselabs.emf.query.impl.ExpressionImpl
-		 * @see org.eclipselabs.emf.query.impl.QueryPackageImpl#getExpression()
+		 * @see org.eclipselabs.emodeling.query.impl.ExpressionImpl
+		 * @see org.eclipselabs.emodeling.query.impl.QueryPackageImpl#getExpression()
 		 * @generated
 		 */
     EClass EXPRESSION = eINSTANCE.getExpression();
 
     /**
-		 * The meta object literal for the '{@link org.eclipselabs.emf.query.impl.FeatureAccessorImpl <em>Feature Accessor</em>}' class.
+		 * The meta object literal for the '{@link org.eclipselabs.emodeling.query.impl.FeatureAccessorImpl <em>Feature Accessor</em>}' class.
 		 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-		 * @see org.eclipselabs.emf.query.impl.FeatureAccessorImpl
-		 * @see org.eclipselabs.emf.query.impl.QueryPackageImpl#getFeatureAccessor()
+		 * @see org.eclipselabs.emodeling.query.impl.FeatureAccessorImpl
+		 * @see org.eclipselabs.emodeling.query.impl.QueryPackageImpl#getFeatureAccessor()
 		 * @generated
 		 */
     EClass FEATURE_ACCESSOR = eINSTANCE.getFeatureAccessor();
@@ -405,11 +405,11 @@ public interface QueryPackage extends EPackage
     EReference FEATURE_ACCESSOR__FEATURE = eINSTANCE.getFeatureAccessor_Feature();
 
     /**
-		 * The meta object literal for the '{@link org.eclipselabs.emf.query.impl.LiteralImpl <em>Literal</em>}' class.
+		 * The meta object literal for the '{@link org.eclipselabs.emodeling.query.impl.LiteralImpl <em>Literal</em>}' class.
 		 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-		 * @see org.eclipselabs.emf.query.impl.LiteralImpl
-		 * @see org.eclipselabs.emf.query.impl.QueryPackageImpl#getLiteral()
+		 * @see org.eclipselabs.emodeling.query.impl.LiteralImpl
+		 * @see org.eclipselabs.emodeling.query.impl.QueryPackageImpl#getLiteral()
 		 * @generated
 		 */
     EClass LITERAL = eINSTANCE.getLiteral();
@@ -431,11 +431,11 @@ public interface QueryPackage extends EPackage
     EAttribute LITERAL__VALUE = eINSTANCE.getLiteral_Value();
 
     /**
-		 * The meta object literal for the '{@link org.eclipselabs.emf.query.impl.BinaryOperationImpl <em>Binary Operation</em>}' class.
+		 * The meta object literal for the '{@link org.eclipselabs.emodeling.query.impl.BinaryOperationImpl <em>Binary Operation</em>}' class.
 		 * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
-		 * @see org.eclipselabs.emf.query.impl.BinaryOperationImpl
-		 * @see org.eclipselabs.emf.query.impl.QueryPackageImpl#getBinaryOperation()
+		 * @see org.eclipselabs.emodeling.query.impl.BinaryOperationImpl
+		 * @see org.eclipselabs.emodeling.query.impl.QueryPackageImpl#getBinaryOperation()
 		 * @generated
 		 */
     EClass BINARY_OPERATION = eINSTANCE.getBinaryOperation();

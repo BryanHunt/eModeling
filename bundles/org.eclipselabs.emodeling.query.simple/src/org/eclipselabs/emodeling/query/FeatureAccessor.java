@@ -4,7 +4,7 @@
  *
  * $Id$
  */
-package org.eclipselabs.emf.query;
+package org.eclipselabs.emodeling.query;
 
 import org.eclipse.emf.ecore.EStructuralFeature;
 
@@ -16,13 +16,13 @@ import org.eclipse.emf.ecore.EStructuralFeature;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link org.eclipselabs.emf.query.FeatureAccessor#getFeatureAccessor <em>Feature Accessor</em>}</li>
- *   <li>{@link org.eclipselabs.emf.query.FeatureAccessor#getFeatureName <em>Feature Name</em>}</li>
- *   <li>{@link org.eclipselabs.emf.query.FeatureAccessor#getFeature <em>Feature</em>}</li>
+ *   <li>{@link org.eclipselabs.emodeling.query.FeatureAccessor#getFeatureAccessor <em>Feature Accessor</em>}</li>
+ *   <li>{@link org.eclipselabs.emodeling.query.FeatureAccessor#getFeatureName <em>Feature Name</em>}</li>
+ *   <li>{@link org.eclipselabs.emodeling.query.FeatureAccessor#getFeature <em>Feature</em>}</li>
  * </ul>
  * </p>
  *
- * @see org.eclipselabs.emf.query.QueryPackage#getFeatureAccessor()
+ * @see org.eclipselabs.emodeling.query.QueryPackage#getFeatureAccessor()
  * @model
  * @generated
  */
@@ -38,14 +38,14 @@ public interface FeatureAccessor extends Expression
    * <!-- end-user-doc -->
 	 * @return the value of the '<em>Feature Accessor</em>' containment reference.
 	 * @see #setFeatureAccessor(FeatureAccessor)
-	 * @see org.eclipselabs.emf.query.QueryPackage#getFeatureAccessor_FeatureAccessor()
+	 * @see org.eclipselabs.emodeling.query.QueryPackage#getFeatureAccessor_FeatureAccessor()
 	 * @model containment="true"
 	 * @generated
 	 */
   FeatureAccessor getFeatureAccessor();
 
   /**
-	 * Sets the value of the '{@link org.eclipselabs.emf.query.FeatureAccessor#getFeatureAccessor <em>Feature Accessor</em>}' containment reference.
+	 * Sets the value of the '{@link org.eclipselabs.emodeling.query.FeatureAccessor#getFeatureAccessor <em>Feature Accessor</em>}' containment reference.
 	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Feature Accessor</em>' containment reference.
@@ -64,14 +64,14 @@ public interface FeatureAccessor extends Expression
    * <!-- end-user-doc -->
 	 * @return the value of the '<em>Feature Name</em>' attribute.
 	 * @see #setFeatureName(String)
-	 * @see org.eclipselabs.emf.query.QueryPackage#getFeatureAccessor_FeatureName()
+	 * @see org.eclipselabs.emodeling.query.QueryPackage#getFeatureAccessor_FeatureName()
 	 * @model required="true"
 	 * @generated
 	 */
   String getFeatureName();
 
   /**
-	 * Sets the value of the '{@link org.eclipselabs.emf.query.FeatureAccessor#getFeatureName <em>Feature Name</em>}' attribute.
+	 * Sets the value of the '{@link org.eclipselabs.emodeling.query.FeatureAccessor#getFeatureName <em>Feature Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Feature Name</em>' attribute.
@@ -90,14 +90,14 @@ public interface FeatureAccessor extends Expression
    * <!-- end-user-doc -->
 	 * @return the value of the '<em>Feature</em>' reference.
 	 * @see #setFeature(EStructuralFeature)
-	 * @see org.eclipselabs.emf.query.QueryPackage#getFeatureAccessor_Feature()
+	 * @see org.eclipselabs.emodeling.query.QueryPackage#getFeatureAccessor_Feature()
 	 * @model required="true" transient="true" derived="true"
 	 * @generated
 	 */
   EStructuralFeature getFeature();
 
   /**
-	 * Sets the value of the '{@link org.eclipselabs.emf.query.FeatureAccessor#getFeature <em>Feature</em>}' reference.
+	 * Sets the value of the '{@link org.eclipselabs.emodeling.query.FeatureAccessor#getFeature <em>Feature</em>}' reference.
 	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Feature</em>' reference.

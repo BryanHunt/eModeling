@@ -11,6 +11,8 @@
 
 package org.eclipselabs.emodeling.components;
 
+import java.util.concurrent.atomic.AtomicReference;
+
 import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipselabs.emodeling.ResourceCache;
 import org.eclipselabs.emodeling.ResourceSetFactory;
@@ -21,18 +23,18 @@ import org.eclipselabs.emodeling.ResourceSetFactory;
  */
 public class ResourceCacheComponent implements ResourceCache
 {
-	private volatile ResourceSetFactory resourceSetFactory;
+	private AtomicReference<ResourceSetFactory> resourceSetFactoryReference;
 	private ResourceSet resourceSet;
 
 	@Override
-	public ResourceSet getResourceSet()
+	public synchronized ResourceSet getResourceSet()
 	{
 		if (resourceSet == null)
 		{
-			ResourceSetFactory factory = resourceSetFactory;
+			ResourceSetFactory resourceSetFactory = resourceSetFactoryReference.get();
 
-			if (factory != null)
-				resourceSet = factory.createResourceSet();
+			if (resourceSetFactory != null)
+				resourceSet = resourceSetFactory.createResourceSet();
 		}
 
 		return resourceSet;
@@ -40,12 +42,11 @@ public class ResourceCacheComponent implements ResourceCache
 
 	public void bindResourceSetFactory(ResourceSetFactory resourceSetFactory)
 	{
-		this.resourceSetFactory = resourceSetFactory;
+		resourceSetFactoryReference.set(resourceSetFactory);
 	}
 
 	public void unbindResourceSetFactory(ResourceSetFactory resourceSetFactory)
 	{
-		if (resourceSetFactory == this.resourceSetFactory)
-			this.resourceSetFactory = null;
+		resourceSetFactoryReference.compareAndSet(resourceSetFactory, null);
 	}
 }

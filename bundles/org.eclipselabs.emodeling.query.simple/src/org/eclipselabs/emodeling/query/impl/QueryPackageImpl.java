@@ -4,7 +4,7 @@
  *
  * $Id$
  */
-package org.eclipselabs.emf.query.impl;
+package org.eclipselabs.emodeling.query.impl;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
@@ -12,12 +12,12 @@ import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 import org.eclipse.emf.ecore.EcorePackage;
 import org.eclipse.emf.ecore.impl.EPackageImpl;
-import org.eclipselabs.emf.query.BinaryOperation;
-import org.eclipselabs.emf.query.Expression;
-import org.eclipselabs.emf.query.FeatureAccessor;
-import org.eclipselabs.emf.query.Literal;
-import org.eclipselabs.emf.query.QueryFactory;
-import org.eclipselabs.emf.query.QueryPackage;
+import org.eclipselabs.emodeling.query.BinaryOperation;
+import org.eclipselabs.emodeling.query.Expression;
+import org.eclipselabs.emodeling.query.FeatureAccessor;
+import org.eclipselabs.emodeling.query.Literal;
+import org.eclipselabs.emodeling.query.QueryFactory;
+import org.eclipselabs.emodeling.query.QueryPackage;
 
 /**
  * <!-- begin-user-doc -->
@@ -66,7 +66,7 @@ public class QueryPackageImpl extends EPackageImpl implements QueryPackage
 	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
 	 * @see org.eclipse.emf.ecore.EPackage.Registry
-	 * @see org.eclipselabs.emf.query.QueryPackage#eNS_URI
+	 * @see org.eclipselabs.emodeling.query.QueryPackage#eNS_URI
 	 * @see #init()
 	 * @generated
 	 */

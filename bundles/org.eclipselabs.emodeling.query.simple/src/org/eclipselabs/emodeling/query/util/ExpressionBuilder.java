@@ -1,4 +1,4 @@
-package org.eclipselabs.emf.query.util;
+package org.eclipselabs.emodeling.query.util;
 
 import java.util.Date;
 
@@ -8,11 +8,11 @@ import org.eclipse.emf.common.util.ResourceLocator;
 import org.eclipse.emf.ecore.EcoreFactory;
 import org.eclipse.emf.ecore.EcorePackage;
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
-import org.eclipselabs.emf.query.BinaryOperation;
-import org.eclipselabs.emf.query.Expression;
-import org.eclipselabs.emf.query.FeatureAccessor;
-import org.eclipselabs.emf.query.Literal;
-import org.eclipselabs.emf.query.QueryFactory;
+import org.eclipselabs.emodeling.query.BinaryOperation;
+import org.eclipselabs.emodeling.query.Expression;
+import org.eclipselabs.emodeling.query.FeatureAccessor;
+import org.eclipselabs.emodeling.query.Literal;
+import org.eclipselabs.emodeling.query.QueryFactory;
 
 public class ExpressionBuilder
 {

@@ -13,7 +13,7 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <package
             uri="http://www.eclipselabs.org/emf/2010/query"
-            class="org.eclipselabs.emf.query.QueryPackage"
+            class="org.eclipselabs.emodeling.query.QueryPackage"
             genModel="model/Query.genmodel"/>
    </extension>
 

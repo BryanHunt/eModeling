@@ -4,15 +4,15 @@
  *
  * $Id$
  */
-package org.eclipselabs.emf.query.impl;
+package org.eclipselabs.emodeling.query.impl;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipselabs.emf.query.BinaryOperation;
-import org.eclipselabs.emf.query.Expression;
-import org.eclipselabs.emf.query.QueryPackage;
+import org.eclipselabs.emodeling.query.BinaryOperation;
+import org.eclipselabs.emodeling.query.Expression;
+import org.eclipselabs.emodeling.query.QueryPackage;
 
 /**
  * <!-- begin-user-doc -->
@@ -21,9 +21,9 @@ import org.eclipselabs.emf.query.QueryPackage;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link org.eclipselabs.emf.query.impl.BinaryOperationImpl#getLeftOperand <em>Left Operand</em>}</li>
- *   <li>{@link org.eclipselabs.emf.query.impl.BinaryOperationImpl#getOperator <em>Operator</em>}</li>
- *   <li>{@link org.eclipselabs.emf.query.impl.BinaryOperationImpl#getRightOperand <em>Right Operand</em>}</li>
+ *   <li>{@link org.eclipselabs.emodeling.query.impl.BinaryOperationImpl#getLeftOperand <em>Left Operand</em>}</li>
+ *   <li>{@link org.eclipselabs.emodeling.query.impl.BinaryOperationImpl#getOperator <em>Operator</em>}</li>
+ *   <li>{@link org.eclipselabs.emodeling.query.impl.BinaryOperationImpl#getRightOperand <em>Right Operand</em>}</li>
  * </ul>
  * </p>
  *

@@ -4,16 +4,16 @@
  *
  * $Id$
  */
-package org.eclipselabs.emf.query.util;
+package org.eclipselabs.emodeling.query.util;
 
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.util.Switch;
-import org.eclipselabs.emf.query.BinaryOperation;
-import org.eclipselabs.emf.query.Expression;
-import org.eclipselabs.emf.query.FeatureAccessor;
-import org.eclipselabs.emf.query.Literal;
-import org.eclipselabs.emf.query.QueryPackage;
+import org.eclipselabs.emodeling.query.BinaryOperation;
+import org.eclipselabs.emodeling.query.Expression;
+import org.eclipselabs.emodeling.query.FeatureAccessor;
+import org.eclipselabs.emodeling.query.Literal;
+import org.eclipselabs.emodeling.query.QueryPackage;
 
 /**
  * <!-- begin-user-doc -->
@@ -25,7 +25,7 @@ import org.eclipselabs.emf.query.QueryPackage;
  * until a non-null result is returned,
  * which is the result of the switch.
  * <!-- end-user-doc -->
- * @see org.eclipselabs.emf.query.QueryPackage
+ * @see org.eclipselabs.emodeling.query.QueryPackage
  * @generated
  */
 public class QuerySwitch<T> extends Switch<T>

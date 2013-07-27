@@ -11,10 +11,9 @@
 
 package org.eclipselabs.emodeling.components;
 
-import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
-import java.util.concurrent.locks.ReentrantReadWriteLock;
+import java.util.concurrent.CopyOnWriteArraySet;
 
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.common.util.URI;
@@ -35,9 +34,8 @@ import org.eclipselabs.emodeling.UriMapProvider;
  */
 public class ResourceSetUriHandlerConfiguratorComponent implements ResourceSetConfigurator
 {
-	private Set<UriHandlerProvider> handlerProviders = new HashSet<UriHandlerProvider>();
-	private Set<UriMapProvider> mapProviders = new HashSet<UriMapProvider>();
-	private ReentrantReadWriteLock lock = new ReentrantReadWriteLock();
+	private Set<UriHandlerProvider> handlerProviders = new CopyOnWriteArraySet<UriHandlerProvider>();
+	private Set<UriMapProvider> mapProviders = new CopyOnWriteArraySet<UriMapProvider>();
 
 	@Override
 	public void configureResourceSet(ResourceSet resourceSet)
@@ -46,75 +44,30 @@ public class ResourceSetUriHandlerConfiguratorComponent implements ResourceSetCo
 		EList<URIHandler> uriHandlers = uriConverter.getURIHandlers();
 		Map<URI, URI> uriMap = uriConverter.getURIMap();
 
-		lock.readLock().lock();
+		for (UriHandlerProvider handlerProvider : handlerProviders)
+			uriHandlers.add(0, handlerProvider.getURIHandler());
 
-		try
-		{
-			for (UriHandlerProvider handlerProvider : handlerProviders)
-				uriHandlers.add(0, handlerProvider.getURIHandler());
-
-			for (UriMapProvider mapProvider : mapProviders)
-				uriMap.putAll(mapProvider.getUriMap());
-		}
-		finally
-		{
-			lock.readLock().unlock();
-		}
+		for (UriMapProvider mapProvider : mapProviders)
+			uriMap.putAll(mapProvider.getUriMap());
 	}
 
 	public void bindUriHandlerProvider(UriHandlerProvider handlerProvider)
 	{
-		lock.writeLock().lock();
-
-		try
-		{
-			handlerProviders.add(handlerProvider);
-		}
-		finally
-		{
-			lock.writeLock().unlock();
-		}
+		handlerProviders.add(handlerProvider);
 	}
 
 	public void unbindUriHandlerProvider(UriHandlerProvider handlerProvider)
 	{
-		lock.writeLock().lock();
-
-		try
-		{
-			handlerProviders.remove(handlerProvider);
-		}
-		finally
-		{
-			lock.writeLock().unlock();
-		}
+		handlerProviders.remove(handlerProvider);
 	}
 
 	public void bindUriMapProvider(UriMapProvider mapProvider)
 	{
-		lock.writeLock().lock();
-
-		try
-		{
-			mapProviders.add(mapProvider);
-		}
-		finally
-		{
-			lock.writeLock().unlock();
-		}
+		mapProviders.add(mapProvider);
 	}
 
 	public void unbindUriMapProvider(UriMapProvider mapProvider)
 	{
-		lock.writeLock().lock();
-
-		try
-		{
-			mapProviders.remove(mapProvider);
-		}
-		finally
-		{
-			lock.writeLock().unlock();
-		}
+		mapProviders.remove(mapProvider);
 	}
 }

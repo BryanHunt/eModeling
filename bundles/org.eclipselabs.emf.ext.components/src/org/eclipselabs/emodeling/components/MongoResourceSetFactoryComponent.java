@@ -13,9 +13,8 @@ package org.eclipselabs.emodeling.components;
 
 import java.util.Collection;
 import java.util.Collections;
-import java.util.HashSet;
 import java.util.Set;
-import java.util.concurrent.locks.ReentrantReadWriteLock;
+import java.util.concurrent.CopyOnWriteArraySet;
 
 import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipselabs.emodeling.ResourceSetConfigurator;
@@ -31,24 +30,15 @@ import org.eclipselabs.emodeling.ResourceSetFactory;
  */
 public class MongoResourceSetFactoryComponent implements ResourceSetFactory
 {
-	private Set<ResourceSetConfigurator> configurators = new HashSet<ResourceSetConfigurator>();
-	private ReentrantReadWriteLock lock = new ReentrantReadWriteLock();
+	private Set<ResourceSetConfigurator> configurators = new CopyOnWriteArraySet<ResourceSetConfigurator>();
 
 	@Override
 	public ResourceSet createResourceSet()
 	{
 		MongoResourceSetImpl resourceSet = new MongoResourceSetImpl();
-		lock.readLock().lock();
 
-		try
-		{
-			for (ResourceSetConfigurator configurator : configurators)
-				configurator.configureResourceSet(resourceSet);
-		}
-		finally
-		{
-			lock.readLock().unlock();
-		}
+		for (ResourceSetConfigurator configurator : configurators)
+			configurator.configureResourceSet(resourceSet);
 
 		return resourceSet;
 	}
@@ -56,43 +46,16 @@ public class MongoResourceSetFactoryComponent implements ResourceSetFactory
 	@Override
 	public Collection<ResourceSetConfigurator> getResourceSetConfigurators()
 	{
-		lock.readLock().lock();
-
-		try
-		{
-			return Collections.unmodifiableCollection(configurators);
-		}
-		finally
-		{
-			lock.readLock().unlock();
-		}
+		return Collections.unmodifiableCollection(configurators);
 	}
 
 	public void bindResourceSetConfigurator(ResourceSetConfigurator resourceSetConfigurator)
 	{
-		lock.writeLock().lock();
-
-		try
-		{
-			configurators.add(resourceSetConfigurator);
-		}
-		finally
-		{
-			lock.writeLock().unlock();
-		}
+		configurators.add(resourceSetConfigurator);
 	}
 
 	public void unbindResourceSetConfigurator(ResourceSetConfigurator resourceSetConfigurator)
 	{
-		lock.writeLock().lock();
-
-		try
-		{
-			configurators.remove(resourceSetConfigurator);
-		}
-		finally
-		{
-			lock.writeLock().unlock();
-		}
+		configurators.remove(resourceSetConfigurator);
 	}
 }

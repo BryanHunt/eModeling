@@ -4,24 +4,24 @@
  *
  * $Id$
  */
-package org.eclipselabs.emf.query.util;
+package org.eclipselabs.emodeling.query.util;
 
 import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.notify.Notifier;
 import org.eclipse.emf.common.notify.impl.AdapterFactoryImpl;
 import org.eclipse.emf.ecore.EObject;
-import org.eclipselabs.emf.query.BinaryOperation;
-import org.eclipselabs.emf.query.Expression;
-import org.eclipselabs.emf.query.FeatureAccessor;
-import org.eclipselabs.emf.query.Literal;
-import org.eclipselabs.emf.query.QueryPackage;
+import org.eclipselabs.emodeling.query.BinaryOperation;
+import org.eclipselabs.emodeling.query.Expression;
+import org.eclipselabs.emodeling.query.FeatureAccessor;
+import org.eclipselabs.emodeling.query.Literal;
+import org.eclipselabs.emodeling.query.QueryPackage;
 
 /**
  * <!-- begin-user-doc -->
  * The <b>Adapter Factory</b> for the model.
  * It provides an adapter <code>createXXX</code> method for each class of the model.
  * <!-- end-user-doc -->
- * @see org.eclipselabs.emf.query.QueryPackage
+ * @see org.eclipselabs.emodeling.query.QueryPackage
  * @generated
  */
 public class QueryAdapterFactory extends AdapterFactoryImpl
@@ -122,13 +122,13 @@ public class QueryAdapterFactory extends AdapterFactoryImpl
 
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.eclipselabs.emf.query.Expression <em>Expression</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipselabs.emodeling.query.Expression <em>Expression</em>}'.
 	 * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.eclipselabs.emf.query.Expression
+	 * @see org.eclipselabs.emodeling.query.Expression
 	 * @generated
 	 */
   public Adapter createExpressionAdapter()
@@ -137,13 +137,13 @@ public class QueryAdapterFactory extends AdapterFactoryImpl
 	}
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.eclipselabs.emf.query.FeatureAccessor <em>Feature Accessor</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipselabs.emodeling.query.FeatureAccessor <em>Feature Accessor</em>}'.
 	 * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.eclipselabs.emf.query.FeatureAccessor
+	 * @see org.eclipselabs.emodeling.query.FeatureAccessor
 	 * @generated
 	 */
   public Adapter createFeatureAccessorAdapter()
@@ -152,13 +152,13 @@ public class QueryAdapterFactory extends AdapterFactoryImpl
 	}
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.eclipselabs.emf.query.Literal <em>Literal</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipselabs.emodeling.query.Literal <em>Literal</em>}'.
 	 * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.eclipselabs.emf.query.Literal
+	 * @see org.eclipselabs.emodeling.query.Literal
 	 * @generated
 	 */
   public Adapter createLiteralAdapter()
@@ -167,13 +167,13 @@ public class QueryAdapterFactory extends AdapterFactoryImpl
 	}
 
   /**
-	 * Creates a new adapter for an object of class '{@link org.eclipselabs.emf.query.BinaryOperation <em>Binary Operation</em>}'.
+	 * Creates a new adapter for an object of class '{@link org.eclipselabs.emodeling.query.BinaryOperation <em>Binary Operation</em>}'.
 	 * <!-- begin-user-doc -->
    * This default implementation returns null so that we can easily ignore cases;
    * it's useful to ignore a case when inheritance will catch all the cases anyway.
    * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see org.eclipselabs.emf.query.BinaryOperation
+	 * @see org.eclipselabs.emodeling.query.BinaryOperation
 	 * @generated
 	 */
   public Adapter createBinaryOperationAdapter()

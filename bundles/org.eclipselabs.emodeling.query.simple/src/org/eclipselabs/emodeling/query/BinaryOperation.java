@@ -4,7 +4,7 @@
  *
  * $Id$
  */
-package org.eclipselabs.emf.query;
+package org.eclipselabs.emodeling.query;
 
 
 /**
@@ -15,13 +15,13 @@ package org.eclipselabs.emf.query;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link org.eclipselabs.emf.query.BinaryOperation#getLeftOperand <em>Left Operand</em>}</li>
- *   <li>{@link org.eclipselabs.emf.query.BinaryOperation#getOperator <em>Operator</em>}</li>
- *   <li>{@link org.eclipselabs.emf.query.BinaryOperation#getRightOperand <em>Right Operand</em>}</li>
+ *   <li>{@link org.eclipselabs.emodeling.query.BinaryOperation#getLeftOperand <em>Left Operand</em>}</li>
+ *   <li>{@link org.eclipselabs.emodeling.query.BinaryOperation#getOperator <em>Operator</em>}</li>
+ *   <li>{@link org.eclipselabs.emodeling.query.BinaryOperation#getRightOperand <em>Right Operand</em>}</li>
  * </ul>
  * </p>
  *
- * @see org.eclipselabs.emf.query.QueryPackage#getBinaryOperation()
+ * @see org.eclipselabs.emodeling.query.QueryPackage#getBinaryOperation()
  * @model
  * @generated
  */
@@ -37,14 +37,14 @@ public interface BinaryOperation extends Expression
    * <!-- end-user-doc -->
 	 * @return the value of the '<em>Left Operand</em>' reference.
 	 * @see #setLeftOperand(Expression)
-	 * @see org.eclipselabs.emf.query.QueryPackage#getBinaryOperation_LeftOperand()
+	 * @see org.eclipselabs.emodeling.query.QueryPackage#getBinaryOperation_LeftOperand()
 	 * @model required="true"
 	 * @generated
 	 */
   Expression getLeftOperand();
 
   /**
-	 * Sets the value of the '{@link org.eclipselabs.emf.query.BinaryOperation#getLeftOperand <em>Left Operand</em>}' reference.
+	 * Sets the value of the '{@link org.eclipselabs.emodeling.query.BinaryOperation#getLeftOperand <em>Left Operand</em>}' reference.
 	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Left Operand</em>' reference.
@@ -63,14 +63,14 @@ public interface BinaryOperation extends Expression
    * <!-- end-user-doc -->
 	 * @return the value of the '<em>Operator</em>' attribute.
 	 * @see #setOperator(String)
-	 * @see org.eclipselabs.emf.query.QueryPackage#getBinaryOperation_Operator()
+	 * @see org.eclipselabs.emodeling.query.QueryPackage#getBinaryOperation_Operator()
 	 * @model required="true"
 	 * @generated
 	 */
   String getOperator();
 
   /**
-	 * Sets the value of the '{@link org.eclipselabs.emf.query.BinaryOperation#getOperator <em>Operator</em>}' attribute.
+	 * Sets the value of the '{@link org.eclipselabs.emodeling.query.BinaryOperation#getOperator <em>Operator</em>}' attribute.
 	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Operator</em>' attribute.
@@ -89,14 +89,14 @@ public interface BinaryOperation extends Expression
    * <!-- end-user-doc -->
 	 * @return the value of the '<em>Right Operand</em>' reference.
 	 * @see #setRightOperand(Expression)
-	 * @see org.eclipselabs.emf.query.QueryPackage#getBinaryOperation_RightOperand()
+	 * @see org.eclipselabs.emodeling.query.QueryPackage#getBinaryOperation_RightOperand()
 	 * @model required="true"
 	 * @generated
 	 */
   Expression getRightOperand();
 
   /**
-	 * Sets the value of the '{@link org.eclipselabs.emf.query.BinaryOperation#getRightOperand <em>Right Operand</em>}' reference.
+	 * Sets the value of the '{@link org.eclipselabs.emodeling.query.BinaryOperation#getRightOperand <em>Right Operand</em>}' reference.
 	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Right Operand</em>' reference.

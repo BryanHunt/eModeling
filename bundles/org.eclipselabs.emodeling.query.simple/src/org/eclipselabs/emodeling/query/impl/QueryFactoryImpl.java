@@ -5,18 +5,18 @@
  * $Id$
  */
 
-package org.eclipselabs.emf.query.impl;
+package org.eclipselabs.emodeling.query.impl;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.impl.EFactoryImpl;
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
-import org.eclipselabs.emf.query.BinaryOperation;
-import org.eclipselabs.emf.query.FeatureAccessor;
-import org.eclipselabs.emf.query.Literal;
-import org.eclipselabs.emf.query.QueryFactory;
-import org.eclipselabs.emf.query.QueryPackage;
+import org.eclipselabs.emodeling.query.BinaryOperation;
+import org.eclipselabs.emodeling.query.FeatureAccessor;
+import org.eclipselabs.emodeling.query.Literal;
+import org.eclipselabs.emodeling.query.QueryFactory;
+import org.eclipselabs.emodeling.query.QueryPackage;
 
 /**
  * <!-- begin-user-doc -->

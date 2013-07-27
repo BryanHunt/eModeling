@@ -4,7 +4,7 @@
     modelName="Query" importerID="org.eclipse.emf.importer.ecore" complianceLevel="6.0"
     copyrightFields="false" usedGenPackages="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore">
   <foreignModel>Query.ecore</foreignModel>
-  <genPackages prefix="Query" basePackage="org.eclipselabs.emf" disposableProviderFactory="true"
+  <genPackages prefix="Query" basePackage="org.eclipselabs.emodeling" disposableProviderFactory="true"
       ecorePackage="Query.ecore#/">
     <genClasses ecoreClass="Query.ecore#//Expression"/>
     <genClasses ecoreClass="Query.ecore#//FeatureAccessor">

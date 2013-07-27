@@ -4,12 +4,12 @@
  *
  * $Id$
  */
-package org.eclipselabs.emf.query.impl;
+package org.eclipselabs.emodeling.query.impl;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.impl.EObjectImpl;
-import org.eclipselabs.emf.query.Expression;
-import org.eclipselabs.emf.query.QueryPackage;
+import org.eclipselabs.emodeling.query.Expression;
+import org.eclipselabs.emodeling.query.QueryPackage;
 
 /**
  * <!-- begin-user-doc -->
