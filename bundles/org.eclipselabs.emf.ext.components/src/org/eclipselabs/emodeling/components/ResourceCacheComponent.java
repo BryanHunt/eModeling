@@ -23,7 +23,7 @@ import org.eclipselabs.emodeling.ResourceSetFactory;
  */
 public class ResourceCacheComponent implements ResourceCache
 {
-	private AtomicReference<ResourceSetFactory> resourceSetFactoryReference;
+	private AtomicReference<ResourceSetFactory> resourceSetFactoryReference = new AtomicReference<ResourceSetFactory>();
 	private ResourceSet resourceSet;
 
 	@Override
