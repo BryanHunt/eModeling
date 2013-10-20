@@ -26,13 +26,6 @@
    </requires>
 
    <plugin
-         id="org.eclipselabs.emodeling.components"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
          id="org.eclipselabs.emodeling.api"
          download-size="0"
          install-size="0"
@@ -52,5 +45,35 @@
          install-size="0"
          version="0.0.0"
          unpack="false"/>
+
+   <plugin
+         id="org.eclipselabs.emodeling.rs.basic"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+   <plugin
+         id="org.eclipselabs.emodeling.rs.cache"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+   <plugin
+         id="org.eclipselabs.emodeling.rs.handler"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+   <plugin
+         id="org.eclipselabs.emodeling.rs.mapping"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+   <plugin
+         id="org.eclipselabs.emodeling.rs.mongo"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
 
 </feature>
