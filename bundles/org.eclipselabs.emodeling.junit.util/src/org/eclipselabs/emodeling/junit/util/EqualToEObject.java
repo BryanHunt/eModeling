@@ -12,7 +12,7 @@
 package org.eclipselabs.emodeling.junit.util;
 
 import static org.eclipselabs.emodeling.junit.util.EqualToEAttribute.equalToEAttribute;
-import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.Matchers.equalTo;
 
 import java.util.HashSet;
 import java.util.Set;

@@ -14,13 +14,17 @@ package org.eclipselabs.emodeling;
 import org.eclipse.emf.ecore.resource.ResourceSet;
 
 /**
- * The ResourceSet from this service is not thread safe. This service
- * is intended to be used on the UI thread.
+ * This OSGi service maintains a singleton ResourceSet created from the ResourceSetFactory service.
+ * 
+ * The ResourceSet from this service is most likely not thread safe. Please consult the service
+ * implementation for thread safety.
  * 
  * @author bhunt
- * 
  */
 public interface ResourceCache
 {
+	/**
+	 * @return a singleton ResourceSet
+	 */
 	public ResourceSet getResourceSet();
 }

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" immediate="true" name="org.eclipselabs.emodeling.rs.cache">
+   <implementation class="org.eclipselabs.emodeling.rs.cache.ResourceCacheComponent"/>
+   <service>
+      <provide interface="org.eclipselabs.emodeling.ResourceCache"/>
+   </service>
+   <reference bind="bindResourceSetFactory" cardinality="1..1" interface="org.eclipselabs.emodeling.ResourceSetFactory" name="ResourceSetFactory" policy="static" unbind="unbindResourceSetFactory"/>
+</scr:component>

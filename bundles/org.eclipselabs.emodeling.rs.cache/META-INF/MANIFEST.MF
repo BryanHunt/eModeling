@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Resource Set Cache Component
+Bundle-SymbolicName: org.eclipselabs.emodeling.rs.cache
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: EclipseLabs
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Import-Package: org.eclipse.emf.ecore.resource,
+ org.eclipselabs.emodeling
+Service-Component: OSGI-INF/services/cache.xml
+Bundle-ActivationPolicy: lazy

@@ -18,7 +18,6 @@ import org.eclipse.emf.ecore.resource.URIHandler;
  * IResourceSetConfigurator for configuring a ResourceSet.
  * 
  * @author bhunt
- * 
  */
 public interface UriHandlerProvider
 {

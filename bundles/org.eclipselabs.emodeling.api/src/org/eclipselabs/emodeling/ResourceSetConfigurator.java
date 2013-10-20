@@ -19,7 +19,6 @@ import org.eclipse.emf.ecore.resource.ResourceSet;
  * ResourceSet factory will apply all configurators.
  * 
  * @author bhunt
- * 
  */
 public interface ResourceSetConfigurator
 {

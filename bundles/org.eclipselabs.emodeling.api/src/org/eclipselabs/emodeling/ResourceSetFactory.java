@@ -19,7 +19,6 @@ import org.eclipse.emf.ecore.resource.ResourceSet;
  * This OSGi service builds an EMF ResourceSet.
  * 
  * @author bhunt
- * 
  */
 public interface ResourceSetFactory
 {

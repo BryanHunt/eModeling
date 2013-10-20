@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Basic Resource Set Factory Component
+Bundle-SymbolicName: org.eclipselabs.emodeling.rs.basic
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: EclipseLabs
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Import-Package: org.eclipse.emf.common.notify.impl,
+ org.eclipse.emf.ecore.resource,
+ org.eclipse.emf.ecore.resource.impl,
+ org.eclipselabs.emodeling
+Service-Component: OSGI-INF/services/factory.xml
+Bundle-ActivationPolicy: lazy

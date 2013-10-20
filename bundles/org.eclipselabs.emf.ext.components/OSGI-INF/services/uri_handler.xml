@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" immediate="true" name="org.eclipselabs.emodeling.uriHandlerConfigurator">
-   <implementation class="org.eclipselabs.emodeling.components.ResourceSetUriHandlerConfiguratorComponent"/>
-   <reference bind="bindUriHandlerProvider" cardinality="0..n" interface="org.eclipselabs.emodeling.UriHandlerProvider" name="UriHandlerProvider" policy="dynamic" unbind="unbindUriHandlerProvider"/>
-   <service>
-      <provide interface="org.eclipselabs.emodeling.ResourceSetConfigurator"/>
-   </service>
-   <reference bind="bindUriMapProvider" cardinality="0..n" interface="org.eclipselabs.emodeling.UriMapProvider" name="UriMapProvider" policy="dynamic" unbind="unbindUriMapProvider"/>
-</scr:component>
