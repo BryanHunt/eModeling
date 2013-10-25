@@ -18,11 +18,39 @@
    </license>
 
    <includes
-         id="org.eclipselabs.emodeling.junit.feature"
+         id="org.eclipselabs.emodeling.api.feature"
          version="0.0.0"/>
 
    <includes
-         id="org.eclipselabs.emodeling.runtime.feature"
+         id="org.eclipselabs.emodeling.log.feature"
+         version="0.0.0"/>
+
+   <includes
+         id="org.eclipselabs.emodeling.matchers.feature"
+         version="0.0.0"/>
+
+   <includes
+         id="org.eclipselabs.emodeling.query.feature"
+         version="0.0.0"/>
+
+   <includes
+         id="org.eclipselabs.emodeling.rs.basic.feature"
+         version="0.0.0"/>
+
+   <includes
+         id="org.eclipselabs.emodeling.rs.cache.feature"
+         version="0.0.0"/>
+
+   <includes
+         id="org.eclipselabs.emodeling.rs.handler.feature"
+         version="0.0.0"/>
+
+   <includes
+         id="org.eclipselabs.emodeling.rs.mapping.feature"
+         version="0.0.0"/>
+
+   <includes
+         id="org.eclipselabs.emodeling.rs.mongo.feature"
          version="0.0.0"/>
 
 </feature>

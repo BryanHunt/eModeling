@@ -1,12 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <feature url="features/org.eclipselabs.emodeling.junit.feature_1.0.0.qualifier.jar" id="org.eclipselabs.emodeling.junit.feature" version="1.0.0.qualifier">
-      <category name="emodeling"/>
-   </feature>
-   <feature url="features/org.eclipselabs.emodeling.runtime.feature_1.0.0.qualifier.jar" id="org.eclipselabs.emodeling.runtime.feature" version="1.0.0.qualifier">
-      <category name="emodeling"/>
-   </feature>
    <feature url="features/org.eclipselabs.emodeling.sdk.feature_1.0.0.qualifier.jar" id="org.eclipselabs.emodeling.sdk.feature" version="1.0.0.qualifier">
+      <category name="emodeling"/>
+   </feature>
+   <feature url="features/org.eclipselabs.emodeling.api.feature_1.0.0.qualifier.jar" id="org.eclipselabs.emodeling.api.feature" version="1.0.0.qualifier">
+      <category name="emodeling"/>
+   </feature>
+   <feature url="features/org.eclipselabs.emodeling.log.feature_1.0.0.qualifier.jar" id="org.eclipselabs.emodeling.log.feature" version="1.0.0.qualifier">
+      <category name="emodeling"/>
+   </feature>
+   <feature url="features/org.eclipselabs.emodeling.matchers.feature_1.0.0.qualifier.jar" id="org.eclipselabs.emodeling.matchers.feature" version="1.0.0.qualifier">
+      <category name="emodeling"/>
+   </feature>
+   <feature url="features/org.eclipselabs.emodeling.query.feature_1.0.0.qualifier.jar" id="org.eclipselabs.emodeling.query.feature" version="1.0.0.qualifier">
+      <category name="emodeling"/>
+   </feature>
+   <feature url="features/org.eclipselabs.emodeling.rs.basic.feature_1.0.0.qualifier.jar" id="org.eclipselabs.emodeling.rs.basic.feature" version="1.0.0.qualifier">
+      <category name="emodeling"/>
+   </feature>
+   <feature url="features/org.eclipselabs.emodeling.rs.cache.feature_1.0.0.qualifier.jar" id="org.eclipselabs.emodeling.rs.cache.feature" version="1.0.0.qualifier">
+      <category name="emodeling"/>
+   </feature>
+   <feature url="features/org.eclipselabs.emodeling.rs.handler.feature_1.0.0.qualifier.jar" id="org.eclipselabs.emodeling.rs.handler.feature" version="1.0.0.qualifier">
+      <category name="emodeling"/>
+   </feature>
+   <feature url="features/org.eclipselabs.emodeling.rs.mapping.feature_1.0.0.qualifier.jar" id="org.eclipselabs.emodeling.rs.mapping.feature" version="1.0.0.qualifier">
+      <category name="emodeling"/>
+   </feature>
+   <feature url="features/org.eclipselabs.emodeling.rs.mongo.feature_1.0.0.qualifier.jar" id="org.eclipselabs.emodeling.rs.mongo.feature" version="1.0.0.qualifier">
       <category name="emodeling"/>
    </feature>
    <category-def name="emodeling" label="EMF Modeling Extensions"/>
