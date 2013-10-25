@@ -31,7 +31,6 @@ import org.eclipse.emf.ecore.util.EContentAdapter;
  * base EMF ResourceSetImpl.
  * 
  * @author bhunt
- * 
  */
 public class MongoResourceSetImpl extends ResourceSetImpl
 {

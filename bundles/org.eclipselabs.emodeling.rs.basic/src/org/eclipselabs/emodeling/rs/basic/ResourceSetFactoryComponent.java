@@ -22,12 +22,11 @@ import org.eclipselabs.emodeling.ResourceSetConfigurator;
 import org.eclipselabs.emodeling.ResourceSetFactory;
 
 /**
- * This implementation of the IResourceSetFactory applies all currently
- * bound ResourceSetConfigurator services to the resource set after
- * construction.
+ * This implementation of the IResourceSetFactory creates an instance of
+ * ResourceSetImpl and applies all currently bound ResourceSetConfigurator
+ * services to the resource set after construction.
  * 
  * @author bhunt
- * 
  */
 public class ResourceSetFactoryComponent implements ResourceSetFactory
 {

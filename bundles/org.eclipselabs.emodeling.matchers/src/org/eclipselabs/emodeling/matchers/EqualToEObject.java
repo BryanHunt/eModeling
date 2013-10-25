@@ -27,19 +27,34 @@ import org.hamcrest.Matcher;
 import org.hamcrest.TypeSafeDiagnosingMatcher;
 
 /**
- * @author bhunt
+ * This is a Hamcrest matcher that compares two instances of EObject. All structural features
+ * are compared.
  * 
+ * @author bhunt
  */
 public class EqualToEObject extends TypeSafeDiagnosingMatcher<EObject>
 {
 	private EObject expectedObject;
 	private Set<EStructuralFeature> excludeFeatures;
 
+	/**
+	 * Factory function for creating a new matcher.
+	 * 
+	 * @param eObject the object to match against
+	 * @return an instance of the matcher
+	 */
 	public static Matcher<? super EObject> equalToEObject(EObject eObject)
 	{
 		return new EqualToEObject(eObject);
 	}
 
+	/**
+	 * Factory function for creating a new matcher.
+	 * 
+	 * @param eObject the object to match against
+	 * @param excludeFeatures the structural features to exclude from matching
+	 * @return an instance of the matcher
+	 */
 	public static Matcher<? super EObject> equalToEObject(EObject eObject, Set<EStructuralFeature> excludeFeatures)
 	{
 		return new EqualToEObject(eObject, excludeFeatures);

@@ -20,14 +20,23 @@ import org.hamcrest.Matcher;
 import org.hamcrest.TypeSafeDiagnosingMatcher;
 
 /**
- * @author bhunt
+ * This is a Hamcrest matcher that compares the values of the specified
+ * EAttribute from two instances of EObject.
  * 
+ * @author bhunt
  */
 public class EqualToEAttribute extends TypeSafeDiagnosingMatcher<EObject>
 {
 	private EObject eObject;
 	private EAttribute attribute;
 
+	/**
+	 * Factory function for creating a new matcher.
+	 * 
+	 * @param eObject the object to match against
+	 * @param attribute the attribute from the object to match
+	 * @return an instance of the matcher
+	 */
 	public static Matcher<? super EObject> equalToEAttribute(EObject eObject, EAttribute attribute)
 	{
 		return new EqualToEAttribute(eObject, attribute);

@@ -30,7 +30,6 @@ import org.eclipselabs.emodeling.UriMapProvider;
  * intended to be used with the IResourceSetFactory service.
  * 
  * @author bhunt
- * 
  */
 public class ResourceSetUriHandlerConfiguratorComponent implements ResourceSetConfigurator
 {

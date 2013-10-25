@@ -18,8 +18,9 @@ import org.eclipselabs.emodeling.ResourceCache;
 import org.eclipselabs.emodeling.ResourceSetFactory;
 
 /**
- * @author bhunt
+ * The cached ResourceSet is not thread safe.
  * 
+ * @author bhunt
  */
 public class ResourceCacheComponent implements ResourceCache
 {
