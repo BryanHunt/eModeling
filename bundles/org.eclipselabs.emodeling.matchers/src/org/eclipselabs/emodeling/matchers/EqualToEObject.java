@@ -79,6 +79,9 @@ public class EqualToEObject extends TypeSafeDiagnosingMatcher<EObject>
 
 	private void describeObject(EObject eObject, Description description, Set<EObject> visited)
 	{
+		if (eObject == null)
+			return;
+
 		description.appendText("{");
 
 		if (visited.contains(eObject))
@@ -141,6 +144,9 @@ public class EqualToEObject extends TypeSafeDiagnosingMatcher<EObject>
 
 	private boolean checkObject(EObject expected, EObject actual, Set<EObject> visited, Description mismatchDescription)
 	{
+		if (expected == null && actual == null)
+			return true;
+
 		if (expected == null)
 		{
 			mismatchDescription.appendText("expected must not be null");
@@ -206,11 +212,13 @@ public class EqualToEObject extends TypeSafeDiagnosingMatcher<EObject>
 					sizeMatcher.describeMismatch(actualObjects.size(), mismatchDescription);
 					matches = false;
 				}
-
-				for (int i = 0; i < expectedObjects.size(); i++)
+				else
 				{
-					if (!checkObject(expectedObjects.get(i), actualObjects.get(i), visited, mismatchDescription))
-						matches = false;
+					for (int i = 0; i < expectedObjects.size(); i++)
+					{
+						if (!checkObject(expectedObjects.get(i), actualObjects.get(i), visited, mismatchDescription))
+							matches = false;
+					}
 				}
 			}
 			else if (!checkObject((EObject) expected.eGet(reference), (EObject) actual.eGet(reference), visited, mismatchDescription))

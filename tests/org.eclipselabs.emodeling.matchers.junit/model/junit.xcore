@@ -1,0 +1,15 @@
+@GenModel(suppressInterfaces="true", rootExtendsClass="org.eclipse.emf.ecore.impl.EObjectImpl")
+package org.eclipselabs.emodeling.matchers.junit.model
+
+class Parent
+{
+	String name
+	contains Child[] children opposite parent
+}
+
+class Child
+{
+	String name
+	int age
+	container Parent parent opposite children
+}
