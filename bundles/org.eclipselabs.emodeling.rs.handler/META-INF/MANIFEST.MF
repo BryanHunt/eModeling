@@ -4,7 +4,7 @@ Bundle-Name: Resource Set Handler Config Component
 Bundle-SymbolicName: org.eclipselabs.emodeling.rs.handler
 Bundle-Version: 1.0.0.qualifier
 Bundle-Vendor: EclipseLabs
-Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Import-Package: org.eclipse.emf.common.util,
  org.eclipse.emf.ecore.resource,
  org.eclipselabs.emodeling

@@ -4,7 +4,7 @@ Bundle-Name: Mongo Resource Set Factory Component
 Bundle-SymbolicName: org.eclipselabs.emodeling.rs.mongo
 Bundle-Version: 1.0.0.qualifier
 Bundle-Vendor: EclipseLabs
-Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Import-Package: org.eclipse.emf.common.notify,
  org.eclipse.emf.common.notify.impl,
  org.eclipse.emf.common.util,
